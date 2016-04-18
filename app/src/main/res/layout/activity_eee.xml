@@ -1,0 +1,57 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+        <GridLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="S1 S2"
+                android:id="@+id/b1"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:text="S3 S4"
+                android:id="@+id/b2"
+                android:textColor="#fff"
+                android:background="@drawable/facilities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:text="S5 S6"
+                android:id="@+id/b3"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <Button
+                android:text="S7 S8"
+                android:id="@+id/b4"
+                android:textColor="#fff"
+                android:background="@drawable/facilities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

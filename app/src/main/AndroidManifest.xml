@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cetcheemeni">
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.cetcheemeni.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cetcheemeni.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true">
+        <activity
+            android:name=".Intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.cetcheemeni.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.cetcheemeni" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.DefaultPushHandler" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />
+
+        <activity
+            android:name=".Notifications2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Notify"
+            android:label="@string/noti"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Student"
+            android:label="@string/student"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Events"
+            android:label="@string/events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Academics"
+            android:label="@string/academics"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Facilities"
+            android:label="@string/facilties"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Dept"
+            android:label="@string/dept"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Fac"
+            android:label="@string/fac"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Commu"
+            android:label="@string/comm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Suggestion"
+            android:label="@string/sugg"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".cse"
+            android:label="@string/cse"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ece"
+            android:label="@string/ece"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".eee"
+            android:label="@string/eee"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ce"
+            android:label="@string/ce"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ite"
+            android:label="@string/ite"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FirstYearCS"
+            android:label="STUDENT DETAILS - I YEAR"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FirstYearEC"
+            android:label="STUDENT DETAILS - I YEAR"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SecondYearCS"
+            android:label="Semester 3 | 4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ThirdYearCS"
+            android:label="Semester 5 | 6"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".FourthYearCS"
+            android:label="Semester 7 | 8"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ieee"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".union" />
+        <activity
+            android:name=".PhotoGallery"
+            android:label="@string/photogal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".College"
+            android:label="College Bus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/about"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Principal"
+            android:label="@string/princi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PrinciMain"
+            android:label="@string/princi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+        <activity android:name=".ECE2" />
+        <activity android:name=".ECE3" />
+        <activity android:name=".ECE4" />
+        <activity android:name=".csac" />
+        android:name=".SecondYearCS"
+        android:label="Semester 3 | 4"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" />
+        <activity android:name=".ecac" />
+        android:name=".SecondYearCS"
+        android:label="Semester 3 | 4"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" />
+        <activity android:name=".eeac" />
+        android:name=".SecondYearCS"
+        android:label="Semester 3 | 4"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ceac"
+            android:label="Semester 3 | 4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".itac"
+            android:label="Semester 3 | 4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Messagebox"
+            android:label="Message Box"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cetcheemeni.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

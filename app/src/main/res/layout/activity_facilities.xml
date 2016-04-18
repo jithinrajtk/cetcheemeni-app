@@ -1,0 +1,104 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+        <GridLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Library"
+                android:id="@+id/b1"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Computer Center"
+                android:id="@+id/b2"
+                android:textColor="#fff"
+                android:background="@drawable/facilities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Lab and Workshop"
+                android:id="@+id/b3"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Seminar Halls and Auditorium"
+                android:id="@+id/b4"
+                android:textColor="#fff"
+                android:background="@drawable/facilities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Hostel"
+                android:id="@+id/b5"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Sports"
+                android:id="@+id/b6"
+                android:textColor="#fff"
+                android:background="@drawable/facilities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="NSS"
+                android:id="@+id/b7"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Canteen"
+                android:id="@+id/b8"
+                android:textColor="#fff"
+                android:background="@drawable/facilities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <Button
+                android:text="Co-operative Store"
+                android:id="@+id/b9"
+                android:textColor="#fff"
+                android:background="@drawable/academics"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+
+        </GridLayout>
+
+    </ScrollView>
+</LinearLayout>

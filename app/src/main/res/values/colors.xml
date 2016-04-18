@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4222</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e47450</color>
+
+    <color name="white">#fff</color>
+
+    <color name="photo">#de5cad</color>
+    <color name="photo1">#a64582</color>
+
+
+    <color name="Notifications">#d400aa</color>
+    <color name="Student">#d400c8</color>
+    <color name="Events">#be00d4</color>
+
+    <color name="Academics">#aa00d4</color>
+    <color name="Facilities">#9100d4</color>
+    <color name="Departments">#7800d4</color>
+
+    <color name="Faculty">#d400aa</color>
+    <color name="Communities">#d400c8</color>
+    <color name="Suggestions">#be00d4</color>
+
+
+
+</resources>

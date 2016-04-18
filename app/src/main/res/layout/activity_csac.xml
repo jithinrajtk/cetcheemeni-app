@@ -1,0 +1,37 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/head"
+        android:text="About College"
+        android:background="#FFF2004D"
+        android:padding="2.0dip"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:id="@+id/newimg"
+        android:layout_gravity="center" />
+
+    <Button
+        android:background="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:text="College of Engineering, Trikaripur is a fast growing Engineering college in north Kerala. It offers undergraduate courses, leading to the award of B.Tech degree of the Cochin University of Science And Technology and APJ Abdul Kalam Technological University." />
+
+</LinearLayout>

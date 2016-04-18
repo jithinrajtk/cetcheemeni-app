@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">COE Trikaripur</string>
+    <string name="noti">Notifications</string>
+    <string name="student">Student</string>
+    <string name="events">Events</string>
+    <string name="academics">Academics</string>
+    <string name="facilties">Facilities</string>
+    <string name="dept">Departments</string>
+    <string name="fac">Faculty</string>
+    <string name="comm">Communities</string>
+    <string name="sugg">Suggestions</string>
+
+    <string name="photogal">Photo Gallery</string>
+    <string name="princi">Principal</string>
+    <string name="about">About</string>
+
+
+    <string name="cse">Computer Science Engg</string>
+    <string name="ece">Electronics and Communications Engg</string>
+    <string name="eee">Electronis and Electtricals Engg</string>
+    <string name="ce">Civil Engineering</string>
+    <string name="ite">Inforation Technology</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sidebar">Sidebar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_princi">Princi</string>
+
+
+    //
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+
+
+</resources>
